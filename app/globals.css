@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #1f2937; /* Dark mode: dark gray */
+  --foreground: #e5e7eb; /* Dark mode: light gray */
+  --card-bg: #374151; /* Dark mode: card background */
+  --card-shadow: rgba(0, 0, 0, 0.3);
+  --primary: #81b1f8; /* Lighter indigo for dark mode */
+  --primary-hover: #6366f1;
 }
 
 @theme inline {
@@ -12,15 +16,42 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth; /* Smooth scroll for navigation */
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  background-color: var(--card-bg);
+  box-shadow: 0 4px 6px var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px var(--card-shadow);
+}
+
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional: Ensure header blends with background */
+header {
+  background-color: var(--background); /* Fallback for non-supporting browsers */
 }
