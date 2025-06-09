@@ -26,7 +26,7 @@ export default function Home() {
         title: "NUSAKA (Nusantara Swakarya) ",
         description: "Gemastik 2023 UX Design Competition - Aplikasi untuk mendaftarkan dan mengamankan hak cipta karya seni seorang seniman dengan Blockchain.",
         image: "nusaka.png",
-        link: "https://github.com/johndoe/ecommerce-app"
+        link: "https://www.figma.com/design/VoGV6QLP3IYd0fpHt32kh0/Nusaka?node-id=0-1&t=CzdrEj8B55dekGoC-1"
       },
       {
         title: "OTAK ATIK",
