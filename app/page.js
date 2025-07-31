@@ -47,7 +47,7 @@ export default function Home() {
         description: "Final Project - Dashboard interaktif untuk analisis sentimen membandingkan metode Naive Bayes dan Multinomial Logistic Regression.",
         image: "sentimen 2.png",
         link: "https://github.com/FingersArts/Skripsi_App",
-        liveDemo: "https://sentimentapp-kkp.streamlit.app/"
+        liveDemo: "https://sentiment-nb-mlr.streamlit.app/"
       },
       
     ],
