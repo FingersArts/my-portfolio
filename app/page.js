@@ -45,7 +45,7 @@ export default function Home() {
       {
         title: "Naive Bayes vs Multinomial Logistic Regression for Sentiment Analysis",
         description: "Final Project - Dashboard interaktif untuk analisis sentimen membandingkan metode Naive Bayes dan Multinomial Logistic Regression.",
-        image: "sentimen.png",
+        image: "sentimen 2.png",
         link: "https://github.com/FingersArts/Skripsi_App",
         liveDemo: "https://sentimentapp-kkp.streamlit.app/"
       },
